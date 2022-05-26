@@ -1,0 +1,119 @@
+*       *********************************************************
+*       *                                                         
+*       * 10/21/2007          MC_INFORMES.MPR           10:04:17  
+*       *                                                         
+*       *********************************************************
+*       *                                                         
+*       * Nombre del autor                                        
+*       *                                                         
+*       * Copyright (C) 2007 Nombre de compañía                   
+*       * Dirección                                               
+*       * Ciudad,     Código pos                                  
+*       * País                                              
+*       *                                                         
+*       * Descripción:                                            
+*       * Este PROGRAMA lo ha generado automáticamente GENMENU.    
+*       *                                                         
+*       *********************************************************
+
+
+*       *********************************************************
+*       *                                                         
+*       *                    Definición de menú                   
+*       *                                                         
+*       *********************************************************
+*
+
+DEFINE POPUP menúcontex SHORTCUT RELATIVE FROM MROW(),MCOL()
+DEFINE BAR 1 OF menúcontex PROMPT "Lista de Clientes" ;
+	KEY CTRL+C, "CTRL+C"
+DEFINE BAR 2 OF menúcontex PROMPT "\-"
+DEFINE BAR 3 OF menúcontex PROMPT "Lista d Proveedores" ;
+	KEY CTRL+P, "CTRL+P"
+DEFINE BAR 4 OF menúcontex PROMPT "\-"
+DEFINE BAR 5 OF menúcontex PROMPT "Catalogo de Articulos" ;
+	KEY CTRL+A, "CTRL+A"
+DEFINE BAR 6 OF menúcontex PROMPT "\-"
+DEFINE BAR 7 OF menúcontex PROMPT "Inventario" ;
+	KEY CTRL+I, "CTRL+I"
+ON SELECTION BAR 1 OF menúcontex ;
+	DO _27j0ll4bk ;
+	IN LOCFILE("\SURTIMUELLES\MC_INFORMES" ,"MPX;MPR|FXP;PRG" ,"DÓNDE está MC_INFORMES?")
+ON SELECTION BAR 3 OF menúcontex ;
+	DO _27j0ll4bl ;
+	IN LOCFILE("\SURTIMUELLES\MC_INFORMES" ,"MPX;MPR|FXP;PRG" ,"DÓNDE está MC_INFORMES?")
+ON SELECTION BAR 5 OF menúcontex ;
+	DO _27j0ll4bm ;
+	IN LOCFILE("\SURTIMUELLES\MC_INFORMES" ,"MPX;MPR|FXP;PRG" ,"DÓNDE está MC_INFORMES?")
+ON SELECTION BAR 7 OF menúcontex ;
+	DO _27j0ll4bn ;
+	IN LOCFILE("\SURTIMUELLES\MC_INFORMES" ,"MPX;MPR|FXP;PRG" ,"DÓNDE está MC_INFORMES?")
+
+ACTIVATE POPUP menúcontex
+
+*       *********************************************************
+*       *                                                         
+*       * _27J0LL4BK  ON SELECTION BAR 1 OF POPUP menúcontex      
+*       *                                                         
+*       * Procedure Origin:                                       
+*       *                                                         
+*       * From Menu:  MC_INFORMES.MPR,            Record:    5    
+*       * Called By:  ON SELECTION BAR 1 OF POPUP menúcontex      
+*       * Prompt:     Lista de Clientes                           
+*       * Snippet:    1                                           
+*       *                                                         
+*       *********************************************************
+*
+PROCEDURE _27j0ll4bk
+Report Form Lista_Clientes.frx to Printer
+
+
+*       *********************************************************
+*       *                                                         
+*       * _27J0LL4BL  ON SELECTION BAR 3 OF POPUP menúcontex      
+*       *                                                         
+*       * Procedure Origin:                                       
+*       *                                                         
+*       * From Menu:  MC_INFORMES.MPR,            Record:    7    
+*       * Called By:  ON SELECTION BAR 3 OF POPUP menúcontex      
+*       * Prompt:     Lista d Proveedores                         
+*       * Snippet:    2                                           
+*       *                                                         
+*       *********************************************************
+*
+PROCEDURE _27j0ll4bl
+Report Form Lista_Proveedores.frx to Printer
+
+
+*       *********************************************************
+*       *                                                         
+*       * _27J0LL4BM  ON SELECTION BAR 5 OF POPUP menúcontex      
+*       *                                                         
+*       * Procedure Origin:                                       
+*       *                                                         
+*       * From Menu:  MC_INFORMES.MPR,            Record:    9    
+*       * Called By:  ON SELECTION BAR 5 OF POPUP menúcontex      
+*       * Prompt:     Catalogo de Articulos                       
+*       * Snippet:    3                                           
+*       *                                                         
+*       *********************************************************
+*
+PROCEDURE _27j0ll4bm
+Report Form Catalogo.frx to Printer
+
+
+*       *********************************************************
+*       *                                                         
+*       * _27J0LL4BN  ON SELECTION BAR 7 OF POPUP menúcontex      
+*       *                                                         
+*       * Procedure Origin:                                       
+*       *                                                         
+*       * From Menu:  MC_INFORMES.MPR,            Record:   11    
+*       * Called By:  ON SELECTION BAR 7 OF POPUP menúcontex      
+*       * Prompt:     Inventario                                  
+*       * Snippet:    4                                           
+*       *                                                         
+*       *********************************************************
+*
+PROCEDURE _27j0ll4bn
+Report Form Existencias.frx to Printer

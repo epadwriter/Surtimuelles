@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<Root>
+   <Info Author="Foood&apos;s Icons" Email="foood@foood.net" Website="http://www.foood.net" Comments="XP iCandy icons from Foood"/>
+   <Icons>
+      <MyDocuments Icon="My Documents.ico,0"/>
+      <MyComputer Icon="My computer.ico"/>
+      <NetworkPlaces Icon="Network.ico,0"/>
+      <TheInternet Icon="Globe.ico"/>
+      <RecycleBinempty Icon="Recycle Bin Empty.ico,0"/>
+      <RecycleBinfull Icon="Recycle Bin Full.ico,0"/>
+      <Explorer Icon="Internet Explorer.ico,0"/>
+      <Email Icon="email.ico,0"/>
+      <Help Icon="Help.ico,0"/>
+      <Find Icon="Windows Explorer.ico,0"/>
+      <Run Icon="Run.ico,0"/>
+      <ClosedFolder Icon="Closed Folder.ico,0"/>
+      <OpenFolder Icon="Open Folder.ico,0"/>
+      <ProgramGroup Icon="Program Files Folder.ico,0"/>
+      <MyMusic Icon="My Music.ico,0"/>
+      <MyPictures Icon="My Pictures.ico,0"/>
+      <SharedMusic Icon="My Music3.ico,0"/>
+      <SharedPictures Icon="My Pictures4.ico,0"/>
+      <ControlPanel Icon="Control Panel.ico,0"/>
+      <AdministrativeTools Icon="Windows Folder.ico"/>
+      <DialUpNetworking Icon="Modem.ico,0"/>
+      <Printers Icon="Printer.ico,0"/>
+      <ScheduledTasks Icon="Clock.ico"/>
+      <Favorites Icon="Favourites.ico"/>
+      <MyRecentDocuments Icon="Recent Documents.ico"/>
+      <FloppyDrive525 Icon="Floppy.ico"/>
+      <FloppyDrive35 Icon="Floppy drive.ico"/>
+      <HardDrive Icon="Hard drive blue.ico,0"/>
+      <CDROMDrive Icon="cd drive.ico"/>
+      <ShortcutOverlay Icon="Shortcut Arrow.ico"/>
+      <Desktop Icon="Desktop.ico"/>
+      <EntireNetwork Icon="Globe 1.ico"/>
+      <NetworkService Icon="Internet Connections 1.ico"/>
+      <AudioCD Icon="music.ico"/>
+      <ConfigurationSettings Icon="Documents &amp; Settings Folder.ico"/>
+      <DefaultDocument Icon="Document blank.ico"/>
+      <MovieClip Icon="Video.ico"/>
+      <TextDocument Icon="Document.ico"/>
+   </Icons>
+</Root>
